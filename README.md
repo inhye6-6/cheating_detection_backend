@@ -10,7 +10,10 @@ add antispoofing , preload model (use app.py)
 ## [211103]
 link with cheating detection front , mongodb
 
+## [211105]
+face untected issue solved.
 
+## How to use
 1. git clone https://github.com/okok0415/cheating_detection_backend.git
 
 2. 파일 접속 후 python -m venv venv (가상환경 생성)
