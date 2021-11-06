@@ -13,7 +13,7 @@ from asgiref.sync import sync_to_async
 
 
 def authentication(image,embedding,confidence=0.5):
-    
+
     try:
         face = detect_face(image, confidence)
         face_to_recog = face
@@ -28,8 +28,7 @@ def authentication(image,embedding,confidence=0.5):
 
     preds = livenessConfig.model.predict(face)[0]
     j = np.argmax(preds)
-    label_name =  livenessConfig.le.classes_[j]  # get label of predicted class
-    result = label_name
+    label_name = 'real' if j == 1 else 'fake'
     
     if label_name == 'real' :
         target_img = preprocess_face(face_to_recog)

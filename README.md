@@ -1,18 +1,21 @@
-## [211015]
+### [211015]
 add verification
 
-## [211020] 
+### [211020] 
 add Ocr
 
-## [211028]
+### [211028]
 add antispoofing , preload model (use app.py)
 
-## [211103]
+### [211103]
 link with cheating detection front , mongodb
 
-## [211105]
-face untected issue solved.
+### [211105]
+solved face untected issue 
 
+### [211106]
+solved the conflict between pytorch and scipy
+ 
 ## How to use
 1. git clone https://github.com/okok0415/cheating_detection_backend.git
 

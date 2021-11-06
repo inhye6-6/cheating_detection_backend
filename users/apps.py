@@ -13,9 +13,7 @@ class UsersConfig(AppConfig):
 class livenessConfig(AppConfig):
     name ='liveness'
     MODEL_PATH = Path('./authentication/models/liveness.model')
-    LABEL_PATH = Path('./authentication/models/label_encoder.pickle')
     model=loadLiveness(MODEL_PATH)
-    le = loadLabel(LABEL_PATH)
 
 class facenetConfig(AppConfig):
     name = 'facenet'
